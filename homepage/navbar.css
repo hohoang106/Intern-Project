@@ -1,0 +1,129 @@
+.container-fluid{
+  box-shadow: 0px 2px 0px rgb(198, 198, 201);
+}
+.navbar{
+  color: #187AAB;
+} 
+.nav-item{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-link{
+  color: #187AAB;
+}
+.navbar-nav {
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-brand{
+  text-align: center;
+}
+.navbar-nav-mobile{
+  background-color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 320px;
+  max-width: 100%;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform linear 0.5s, opacity linear 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly ;
+  padding-inline-start: 0px;
+}
+.over_lay{
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0, 0, 0, 0.3);
+display: none;
+animation: fadeIn linear 0.5s;
+}
+.input_nav:checked ~ .over_lay{
+  display: block;
+}
+.input_nav:checked ~ .navbar>.navbar-nav-mobile{
+  transform: translateX(0%);
+  opacity: 1;
+}
+.icon-menu{
+  display: none;
+  color: #187AAB;
+}
+
+.form-control-2 {
+  margin: 0rem 1rem;
+  width: 250px;
+  border-radius: 5px;
+  border: 2px solid #187AAB;
+}
+.icon-add-2{
+  margin-left: 1rem;
+}
+.icon-close{
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+@media (min-width: 768px) and (max-width:1023px){
+  .navbar-nav-pc{
+    display: none;
+  }
+  .container{
+    position: relative;
+  }
+  .icon-menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 6em;
+    padding-top: 1.5rem;
+  }
+
+}
+@media (max-width: 769px) {
+  .navbar-nav-pc{
+    display: none;
+  }
+  .container{
+    position: relative;
+  }
+  .icon-menu{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 1.5em;
+    padding-top: 1.5rem;
+
+  }
+}
+@keyframes fadeIn{
+from{
+  opacity: 0;
+}
+to{
+  opacity: 1;
+}
+}
+
+
+.footer{
+  margin: auto;
+}
+.footer-copyright{
+  border-top: 1px solid white;
+  width: 100%;
+  color: white;
+}
+.footer-full{
+  background-color: #187AAB;
+}

@@ -1,0 +1,65 @@
+
+/* Home */
+.carousel-item{
+  height: 30rem;
+}
+.fa-chevron-left{
+  position: absolute;
+  top: 10rem;
+  left: 0;
+}
+.fa-chevron-right{
+  position: absolute;
+  top: 10rem;
+  right: 0;
+}
+
+.container-fit{
+  background-image: url("backgr1.jpg");
+}
+h4, h3, h5{
+  color: #187AAB;
+}
+
+/* Register */
+.register{
+  color: #187AAB;
+}
+.btn-register{
+  background-color:#187AAB ;
+}
+input ::placeholder {
+  color: #187AAB;
+}
+
+/* Login */
+.btn-facebook{
+  background-color: #3C589C;
+}
+.btn-google{
+
+  background-color: #DF4B3B;
+}
+a{
+  color: #187AAB;
+}
+.btn-login{
+  background-color:#187AAB ;
+  opacity: 0.9 ;
+}
+.btn-login:hover{
+  opacity: 1;
+}
+@media (max-width: 575px) {
+  .social-btn{
+    flex-direction: column;
+  }
+}
+
+/* forgot password */
+.btn-cancer{
+  background-color: grey;
+}
+.btn-send{
+  background-color: #187AAB;
+}

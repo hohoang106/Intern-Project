@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <button>Viết bài</button>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Ngày đăng</th>
+            <th scope="col">Tiêu đề bài viết</th>
+            <th scope="col">Mô tả</th>
+            <th scope="col">Tác giả</th>
+            <th scope="col">Hình ảnh</th>
+            <th scope="col">Tác vụ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10/5/2021</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Otto</td>
+            <td>
+              <button type="button" class="btn btn-dark btn-sm px-3" data-toggle="modal" data-target="#myModal">
+                <i class="fas fa-edit"></i>
+              </button>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <!-- Modal -->
+    <div class="modal" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title " id="exampleModalLabel">Sửa bài viết</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="danh-muc" class="form-label">Danh mục</label>
+              <input type="email" class="form-control" id="danh-muc" placeholder="Kiến thức dinh dưỡng">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
